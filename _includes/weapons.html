@@ -3,12 +3,14 @@
     <tr>
       <th>Name</th>
       <th>Status</th>
+      <th>Player</th>
     </tr>
   {% for weapon in site.data.weapons %}
     {% if weapon.base or weapon.edition == edition %}
         <tr>
             <td class="guess-component">{{ weapon.name }}</td>
             <td><input type="button" class="multi-checkbox" value="&#x2B1C;" /></td>
+            <td><input type="text" class="" value="" /></td>
         </tr>
     {% endif %}
   {% endfor %}

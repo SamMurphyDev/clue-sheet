@@ -3,12 +3,14 @@
     <tr>
       <th>Name</th>
       <th>Status</th>
+      <th>Player</th>
     </tr>
   {% for room in site.data.rooms %}
     {% if room.base or room.edition == edition %}
         <tr>
             <td class="guess-component">{{ room.name }}</td>
             <td><input type="button" class="multi-checkbox" value="&#x2B1C;" /></td>
+            <td><input type="text" class="" value="" /></td>
         </tr>
     {% endif %}
   {% endfor %}
